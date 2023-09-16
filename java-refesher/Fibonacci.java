@@ -14,10 +14,10 @@ public class Fibonacci {
     int count = input.nextInt();
     int result, num1 = 0;
     int num2 = 1;
-    System.out.print(num1 + "  ");
-    System.out.print(num2 + "  ");
 
     if (count > 0) {
+      System.out.print(num1 + "  ");
+      System.out.print(num2 + "  ");
       for (int i = 0; i < count - 2; i++) {
         result = num1 + num2;
         num1 = num2;
