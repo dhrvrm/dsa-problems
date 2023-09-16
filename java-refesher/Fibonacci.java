@@ -12,7 +12,7 @@ public class Fibonacci {
 
     System.out.print("Enter fibonacci count: ");
     int count = input.nextInt();
-    int result, num1 = 0;
+    int result = 0, num1 = 0;
     int num2 = 1;
 
     if (count > 0) {
