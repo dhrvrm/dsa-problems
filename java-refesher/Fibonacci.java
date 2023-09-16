@@ -17,11 +17,13 @@ public class Fibonacci {
     System.out.print(num1 + "  ");
     System.out.print(num2 + "  ");
 
-    for (int i = 0; i < count - 2; i++) {
-      result = num1 + num2;
-      num1 = num2;
-      num2 = result;
-      System.out.print(result + "  ");
+    if (count > 0) {
+      for (int i = 0; i < count - 2; i++) {
+        result = num1 + num2;
+        num1 = num2;
+        num2 = result;
+        System.out.print(result + "  ");
+      }
     }
   }
 }
