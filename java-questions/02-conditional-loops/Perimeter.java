@@ -39,7 +39,6 @@ public class Perimeter {
     System.out.println("Perimeter of Square: " + perimeter);
   }
 
-
   static void perimeterOfRectangle(double length, double width) {
     double perimeter = 2 * (length + width);
     System.out.println("Perimeter of Rectangle: " + perimeter);
