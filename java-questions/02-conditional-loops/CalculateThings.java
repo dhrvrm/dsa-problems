@@ -8,7 +8,14 @@ Assigment Question Basic
 - Calculate Depreciation of Value
 - Calculate Batting Average
 - Calculate CGPA Java Program
-- Calculate Average Marks
+- Calculate Average 
+- Calculate Power
+- Calculate Compound Interest
+- Calculate Sum Of N Numbers
+- Calculate Future Investment Value
+- Calculate LCM
+- Calculate HCF
+
 */
 
 import java.util.Scanner;
@@ -18,15 +25,19 @@ public class CalculateThings {
   public static void main(String args[]) {
     Scanner input = new Scanner(System.in);
 
-    calculateElectrictyBill(167);
-    calculateAverage(new int[] { 2, 3, 5, 7 });
-    calculateDiscount(1000, 20f);
-    calculateDistance(3, 5, 5, 3);
-    calculateCommission(2000, 12.2f);
-    calculateDepriciation(110000, 10.0f);
-    calculateBattingAverage(350, 4);
-    calculateCGPA(80.0f);
-    calculateAverageMarks(new int[] {45,56,49,78,68,86,31});
+    // calculateElectrictyBill(167);
+    // calculateAverage(new int[] { 2, 3, 5, 7 });
+    // calculateDiscount(1000, 20f);
+    // calculateDistance(3, 5, 5, 3);
+    // calculateCommission(2000, 12.2f);
+    // calculateDepriciation(110000, 10.0f);
+    // calculateBattingAverage(350, 4);
+    // calculateCGPA(80.0f);
+    // calculateAverageMarks(new int[] { 45, 56, 49, 78, 68, 86, 31 });
+    // calculatePower(2, 5);
+    calculateCompoundInterest(10000.0, 6.0, 4);
+    calculateSumOfN(new int[] { 45, 56, 49, 78, 68, 86, 31 });
+    calculateCompoundInterest(40000.0, 7.0, 3);
   }
 
   static void calculateElectrictyBill(double units) {
@@ -116,5 +127,41 @@ public class CalculateThings {
       average = sum / marks.length;
     }
     System.out.println("Average Marks: " + average);
+  }
+
+  static void calculatePower(double num, int power) {
+    double result = 1;
+    for (int count = 0; count < power; count++) {
+      result *= num;
+    }
+    System.out.println(num + " to the power of " + power + " is: " + result);
+  }
+
+  static void calculateCompoundInterest(
+    double principal,
+    double rate,
+    int years
+  ) {
+    double interest = principal * (Math.pow((1 + rate / 100), years));
+    System.out.println("Total After Compound Interest is: " + interest);
+  }
+
+  static void calculateSumOfN(int[] nums) {
+    int sum = 0;
+    if (nums.length > 0) {
+      for (int i = 0; i < nums.length; i++) {
+        sum += nums[i];
+      }
+    }
+    System.out.println("Sum of N numbers: " + sum);
+  }
+
+  static void calculateFutureInvestmentValue(
+    double investment,
+    double rate,
+    int years
+  ) {
+    double futureValue = investment * (Math.pow((1 + rate / 100), years));
+    System.out.println("Projected Future Value is: " + futureValue);
   }
 }
