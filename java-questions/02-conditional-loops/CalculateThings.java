@@ -35,8 +35,8 @@ public class CalculateThings {
     // calculateCGPA(80.0f);
     // calculateAverageMarks(new int[] { 45, 56, 49, 78, 68, 86, 31 });
     // calculatePower(2, 5);
-    calculateCompoundInterest(10000.0, 6.0, 4);
-    calculateSumOfN(new int[] { 45, 56, 49, 78, 68, 86, 31 });
+    // calculateCompoundInterest(10000.0, 6.0, 4);
+    // calculateSumOfN(new int[] { 45, 56, 49, 78, 68, 86, 31 });
     calculateCompoundInterest(40000.0, 7.0, 3);
   }
 
