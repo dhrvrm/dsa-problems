@@ -6,7 +6,7 @@ public class Prime {
   }
 
   static void primeInRange(int low, int high) {
-    if (low <= 1 || high<=1) {
+    if (low <= 1 || high <= 1) {
       return;
     }
     for (int i = low; i <= high; i++) {
@@ -16,6 +16,8 @@ public class Prime {
     }
   }
 
+  //Optimized function to do 1/3rd of O(√n) solution where we check until the root of the target number
+  //here we are eliminating number by increementing by 6 stating from 5 and checking i and i+2
   static boolean isPrime(int num) {
     if (num % 2 == 0 || num % 3 == 0) {
       return false;
@@ -28,5 +30,4 @@ public class Prime {
     return true;
   }
 }
-
-//Actual Output: 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
+//Actual Output: 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
